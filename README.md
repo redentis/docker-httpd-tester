@@ -10,7 +10,7 @@
        $ docker build -t {image-name} .
 1. Start the new image
        
-       $ docker run -dit --name {container-name} {image-name} .
+       $ docker run -dit --name {container-name} -p 8080:80 {image-name}
 
 If you need to connect to the running container to check logs etc.
 
